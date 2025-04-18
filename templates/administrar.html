@@ -29,12 +29,12 @@
                 <tbody>
                     {% for persona in registros %}
                     <tr>
-                        <td data-label="Seleccionar"><input type="checkbox" name="seleccion" value="{{ persona[0] }}"></td>
-                        <td data-label="DNI">{{ persona[1] }}</td>
-                        <td data-label="Nombre">{{ persona[2] }}</td>
-                        <td data-label="Apellido">{{ persona[3] }}</td>
-                        <td data-label="Dirección">{{ persona[4] }}</td>
-                        <td data-label="Teléfono">{{ persona[5] }}</td>
+                        <td><input type="checkbox" name="seleccion" value="{{ persona[0] }}"></td>
+                        <td>{{ persona[1] }}</td>
+                        <td>{{ persona[2] }}</td>
+                        <td>{{ persona[3] }}</td>
+                        <td>{{ persona[4] }}</td>
+                        <td>{{ persona[5] }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
