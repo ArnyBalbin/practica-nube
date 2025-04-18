@@ -115,3 +115,15 @@ h1 {
 .separator {
     margin-bottom: 20px; /* Ajustar según sea necesario */
 }
+
+.eliminar-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eliminar-btn:hover {
+    background-color: #c0392b;
+}

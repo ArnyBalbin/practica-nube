@@ -58,12 +58,13 @@ def administrar():
     registros=obtener_registros()
     return render_template('administrar.html',registros=registros)
 
-@app.route('/eliminar/<dni>', methods=['POST'])
-def eliminar_registro(dni):
-    conn = psycopg2.connect(
-        dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
-    cursor=conn.cursor()
-    cursor.execute("DELETE FROM personas WHERE dni = %s", (dni,))
+@app.route('/eliminar', methods=['POST'])
+def eliminar_registros():
+    ids = request.form.getlist('seleccion')
+    conn = conectar_db()
+    cursor = conn.cursor()
+    for id in ids:
+        cursor.execute("DELETE FROM personas WHERE id = %s", (id,))
     conn.commit()
     conn.close()
     return redirect(url_for('administrar'))
