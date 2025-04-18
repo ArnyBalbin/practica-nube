@@ -13,7 +13,7 @@
         <a href="/" class="administrar-link">← Volver al Registro</a>
         <div class="separator"></div>
 
-        {% if personas %}
+        {% if registros %}
         <table>
             <thead>
                 <tr>
@@ -26,7 +26,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for persona in personas %}
+                {% for persona in registros %}
                 <tr>
                     <td>{{ persona[1] }}</td>
                     <td>{{ persona[2] }}</td>
