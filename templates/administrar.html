@@ -13,7 +13,7 @@
         <a href="/" class="administrar-link">← Volver al Registro</a>
         <div class="separator"></div>
 
-        {% if personas %}
+        {% if registros %}
         <form action="/eliminar" method="post" onsubmit="return confirm('¿Seguro que deseas eliminar los seleccionados?');">
             <table>
                 <thead>
@@ -27,7 +27,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for persona in personas %}
+                    {% for persona in registros %}
                     <tr>
                         <td><input type="checkbox" name="seleccion" value="{{ persona[0] }}"></td>
                         <td>{{ persona[1] }}</td>
