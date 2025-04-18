@@ -38,7 +38,6 @@ input[type="text"] {
 button {
     background-color: #007bff;
     color: #fff;
-    display: block;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -117,6 +116,11 @@ h1 {
     margin-bottom: 20px; /* Ajustar según sea necesario */
 }
 
+.boton-contenedor {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .eliminar-btn {
     background-color: #e74c3c;
     color: white;
@@ -124,8 +128,6 @@ h1 {
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 5px;
-    margin: auto;
     display: block;
 }
 .eliminar-btn:hover {
