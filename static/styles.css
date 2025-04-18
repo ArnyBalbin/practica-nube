@@ -118,7 +118,8 @@ h1 {
 
 .boton-contenedor {
     margin-top: 20px;
-    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .eliminar-btn {
@@ -127,6 +128,7 @@ h1 {
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
+    margin: auto;
     cursor: pointer;
     display: block;
 }
